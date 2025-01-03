@@ -29,9 +29,29 @@ This repository provides an end-to-end solution for **Image Classification**, ut
 
 ## Getting Started
 
-### Prerequisites
+# Instructions
 
-1. Python 3.x  
-2. Install required libraries:
-   ```bash
-   pip install -r requirements.txt
+1. **Train the Model**  
+   - Open the provided Jupyter Notebook file to train the image classification model:
+     ```bash
+     jupyter notebook train_model.ipynb
+     ```
+   - Follow the steps in the notebook:
+     - Preprocess the dataset.  
+     - Train the deep learning model.  
+     - Save the trained model as `model.h5` in the project directory.
+
+2. **Run the GUI Application**  
+   - Once the `.h5` model is saved, launch the GUI application:
+     ```bash
+     python cifar10_gui.py
+     ```
+   - Use the application to upload images and view predictions made by the trained model.
+
+3. **Verify the Environment**  
+   - Ensure all dependencies listed in `requirements.txt` are installed:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Confirm that the `model.h5` file is located in the same directory as `cifar10_gui.py`. Update the script if the file is stored elsewhere.
+
